@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>
+                    Seja bem-vindo (a) novamente. Faça login para acessar sua conta e poder configurar seu ambiente.
+                </p>
+                <form action="login.php" method="post">
+                    <label for="idEmail">Login</label>
+                    <input type="email" name="nmEmail" id="idEmail">
+                    <label for="idSenha">Senha</label>
+                    <input type="password" name="nmSenha" id="idSenha">
+                    <input type="submit" value="Entrar">
+                    <input type="button" value="Esqueci a senha">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
