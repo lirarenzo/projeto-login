@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media-query.css">
 </head>
 <body>
     <main>
         <section class="container">
-            <div id="imagem"></div>
-            <div id="formulario">
+            <div class="container__container" id="imagem"></div>
+            <div class="container__container" id="formulario">
                 <h1>Login</h1>
                 <p>
                     Seja bem-vindo (a) novamente. Faça login para acessar sua conta e poder configurar seu ambiente.
                 </p>
                 <form action="login.php" method="post">
                     <!--Campo LOGIN-->
-                    <label for="idEmail">Login</label>
-                    <input type="email" name="nmEmail" id="idEmail" required minlength="5" maxlength="20" placeholder="seu e-mail">
+                    <div>
+                        <label for="idEmail">Login</label>
+                        <input type="email" name="nmEmail" id="idEmail" required minlength="5" maxlength="20" placeholder="seu e-mail">
+                    </div>
                      <!--Campo SENHA-->
-                    <label for="idSenha">Senha</label>
-                    <input type="password" name="nmSenha" id="idSenha" required minlength="4" maxlength="8" placeholder="de 4 a 8 caracteres"> 
+                    <div>
+                        <label for="idSenha">Senha</label>
+                        <input type="password" name="nmSenha" id="idSenha" required minlength="4" maxlength="8" placeholder="de 4 a 8 caracteres">
+                    </div>
                      <!--Botão ENTRAR-->
                      <input class="btn" type="submit" value="Entrar">
                      <!--Botão ESQUECI A SENHA-->
