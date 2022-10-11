@@ -6,3 +6,69 @@ CORES
 #4e3a5c (roxo)
 #276092 (azul)
 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --corRoxo: #4e3a5c;
+    --corAmarelo: #ca4f2c;
+    --corAzul: #276092;
+}
+html, body, main{
+    width: 100vw;
+    height: 100vh;
+}
+/*MOBILE FIRST*/
+main{
+    background-color: var(--corRoxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    box-shadow: 0 0 3px 3px #00000070;
+    border-radius: 10px;
+}
+div{
+    width: 50vw;
+    text-align: justify;
+    background-color: var(--corAzul);
+    color: #ffffff;
+}
+div > h1{
+    text-align: center;
+    margin: 10px auto;
+}
+div > p{
+    margin: 20px auto; 
+    font-size: 0.8rem;  
+}
+#imagem{
+    height: 35vh;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../images/pexels-steve-johnson-1724888.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#formulario {
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    padding: 12px;
+}
+input.btn{
+    width: 45vw;
+    min-height: 5vh;
+    margin: 3px auto;
+    border-radius: 5px;
+    border: 1px solid #00000030;
+}
+input.btn:hover{
+    background-color: var(--corAmarelo);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
